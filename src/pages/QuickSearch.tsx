@@ -160,12 +160,12 @@ export default function QuickSearch() {
         {/* Results */}
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {filtered.map((i) => (
-            <div key={i.slug} className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-black/40 via-black/25 to-black/40 shadow-soft backdrop-blur transition hover:-translate-y-1 hover:border-red-500/30">
+            <div key={i.slug} className="group overflow-hidden rounded-2xl border border-white/10 bg-gradient from-black/40 via-black/25 to-black/40 shadow-soft backdrop-blur transition hover:-translate-y-1 hover:border-red-500/30">
               {/* Photo */}
               <div className="relative h-32 border-b border-white/10">
                 <div className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style={{ backgroundImage: `url(${i.image})` }} />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 via-transparent to-blue-900/15" />
+                <div className="absolute inset-0 bg-gradient from-black/75 via-black/35 to-transparent" />
+                <div className="absolute inset-0 bg-gradient from-red-900/20 via-transparent to-blue-900/15" />
 
                 <div className="absolute right-3 top-3 rounded-full bg-black/60 px-2 py-1 text-[11px] text-white/85">{i.category}</div>
               </div>

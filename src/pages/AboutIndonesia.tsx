@@ -17,7 +17,7 @@ export default function AboutIndonesia() {
         <div className="grid gap-4 md:grid-cols-4">
           {["Welcome to Indonesia", "General Information", "Religion", "Literature & Art", "Cultural Heritage"].map((t) => (
             <button key={t} className="rounded-2xl border border-white/15 bg-white/5 p-4 text-left shadow-soft transition hover:-translate-y-0.5 hover:bg-white/10">
-              <div className="mb-3 h-28 rounded-xl border border-white/10 bg-gradient-to-br from-white/15 to-white/5" />
+              <div className="mb-3 h-28 rounded-xl border border-white/10 bg-gradient from-white/15 to-white/5" />
               <div className="text-sm font-extrabold">{t}</div>
               <div className="mt-1 text-xs text-white/60">Curated overview</div>
             </button>
