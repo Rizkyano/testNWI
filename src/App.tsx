@@ -6,6 +6,7 @@ import Attraction from "./pages/AttractionPage";
 import AboutIndonesia from "./pages/AboutIndonesia";
 import ScenicSpotSearch from "./pages/ScenicSpot";
 import QuickSearch from "./pages/QuickSearch";
+import ScenicDetail from "./pages/ScenicDetail";
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
         <Route path="/attraction/about" element={<AboutIndonesia />} />
         <Route path="/attraction/scenic" element={<ScenicSpotSearch />} />
         <Route path="/attraction/quick" element={<QuickSearch />} />
-        <Route path="*" element={<Navigate to="/attraction" replace />} />
+        <Route path="/attraction/scenic/:slug" element={<ScenicDetail />} />
+        {/* <Route path="*" element={<Navigate to="/attraction" replace />} /> */}
       </Routes>
 
       <Footer />
